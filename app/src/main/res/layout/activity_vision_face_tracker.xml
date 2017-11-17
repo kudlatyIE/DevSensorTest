@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.codefactory.devtest.VisionFaceTrackerActivity" >
+
+<TextView
+    android:id="@+id/visionface_text_info"
+    android:layout_alignParentTop="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello_world" />
+
+<com.example.visionface.CameraSourcePreview
+    android:id="@+id/visionface_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.example.visionface.GraphicOverlay
+        android:id="@+id/visionface_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</com.example.visionface.CameraSourcePreview>
+
+
+
+</RelativeLayout>
+
+    <!--
+    android:layout_below="@+id/visionface_text_info"
+     -->
+
